@@ -1,0 +1,4 @@
+- Créer un module permettant de générer du lorem ipsum. 
+- Appeler le module lorem.ipsum.js. 
+- Importer le module en question dans index.js
+- Utiliser le module et afficher dans la console du lorem ipsum.
