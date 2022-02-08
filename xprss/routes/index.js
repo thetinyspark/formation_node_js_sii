@@ -8,5 +8,6 @@ const homeController  = require('../controller/home');
 router.get( '/'     , homeController.index    );
 router.get( '/users', userController.getUsers );
 router.get( '/dice' , diceController.roll     );
+router.post( '/dice/limit' , diceController.changeLimit  );
 
 module.exports = router;

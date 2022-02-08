@@ -1,5 +1,5 @@
-function roll(req, res, next){
-    const value = Math.round(Math.random() * 100);
+function doRoll(limit){
+    const value = Math.round(Math.random() * limit);
     let color = 'blue';
 
     if( value < 20 ){
@@ -8,13 +8,25 @@ function roll(req, res, next){
     else if( value < 50 ){
         color = 'orange';
     }
-    else if( value < 100 ){
+    else if( value < limit ){
         color = 'red';
     }
 
-    res.render('dice', {color: color, value: value});
+    return {
+        color, 
+        value
+    };
+}
+
+function roll(req, res, next){
+    res.render('dice', doRoll(100));
+}
+
+function changeLimit(req, res, next){
+    res.render('dice', doRoll(req.body.limit || 100));
 }
 
 module.exports = {
-    roll
+    roll, 
+    changeLimit
 };

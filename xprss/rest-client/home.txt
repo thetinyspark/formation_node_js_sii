@@ -1,0 +1,6 @@
+POST http://localhost:8081/dice/limit
+Content-Type: application/json
+
+{
+    "limit":1000
+}
