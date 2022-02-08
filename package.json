@@ -1,0 +1,19 @@
+{
+  "name": "formation_node_js_sii",
+  "version": "1.0.0",
+  "description": "Formation node js sii du 07 au 08 février 2022",
+  "main": "index.js",
+  "scripts": {
+    "hapi": "node hapi/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thetinyspark/formation_node_js_sii.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thetinyspark/formation_node_js_sii/issues"
+  },
+  "homepage": "https://github.com/thetinyspark/formation_node_js_sii#readme"
+}
