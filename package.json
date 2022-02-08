@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/thetinyspark/formation_node_js_sii/issues"
   },
-  "homepage": "https://github.com/thetinyspark/formation_node_js_sii#readme"
+  "homepage": "https://github.com/thetinyspark/formation_node_js_sii#readme",
+  "dependencies": {
+    "underscore": "^1.13.2"
+  }
 }
